@@ -1,0 +1,17 @@
+# AWS
+\b[0-9a-z]{10}\.execute-api\.[-0-9a-z]+\.amazonaws\.com\b
+# Google DataStudio
+\bdatastudio\.google\.com/(?:(?:c/|)u/\d+/|)(?:embed/|)(?:open|reporting|datasources|s)/[-0-9a-zA-Z]+(?:/page/[-0-9a-zA-Z]+|)
+# GitHub SHAs
+(?:\[[0-9a-f]+\]\(https:/|)/github\.com/[^/]+/[^/]+/[^/]+/[0-9a-f]+\b
+\bgithub\.com/[^/]+/[^/]+[@#][0-9a-f]+\b
+# Slack
+slack://[a-zA-Z0-9?&=]+
+\bslack\.com/[-0-9a-zA-Z/_]*
+
+# URL escaped characters
+\%[0-9A-F]{2}
+# hex digits including css/html color classes:
+(?:[\\0][xX]|\\u|[uU]\+|#x?|\%23)[0-9a-fA-FgGrR_]{2,}(?:[uU]?[lL]{0,2}|u\d+)\b
+
+<td align="center"><a href="[^"]*"><img src="[^"]*" width="[^"]*" alt=""/><br /><sub><b>[^<]*</b></sub></a><br /><a href="[^"]*" title="[^"]*">[^<]*</a>

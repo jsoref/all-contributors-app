@@ -1,0 +1,8 @@
+ignore$
+^LICENSE
+^\.github/
+^test/fixtures/
+\.all-contributorsrc$
+^package(?:-lock|)\.json$
+\.png$
+\.snap$
